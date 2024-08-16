@@ -11,7 +11,7 @@ import asyncio
 config = configparser.ConfigParser()
 config_path = Path(__file__).parent / 'config.ini'
 config.read(config_path)
-token = config['TOKEN']['TOKEN_SB']
+token = config['TOKEN']['token']
 
 async def main():
     # Create the Application and pass the bot token.
